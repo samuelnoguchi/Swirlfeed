@@ -114,6 +114,10 @@ if(isset($_POST['register_button'])){
 			$check_username_query = mysqli_query($con, "SELECT username FROM users WHERE username = '$username'");
 		}
 
+		//Profile picture assignment
+
+		$profile_pic = "Assets/Images/profile_pics/defaults/head_deep_blue.png";
+
 
 	}
 
