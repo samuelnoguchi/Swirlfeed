@@ -15,6 +15,11 @@ if(isset($_POST['login_button'])) {
 		$username = $row['username'];
 
 		$_SESSION['username'] = $username;
+		header("Location: index.php");
+		exit();
+	}
+	else {
+		array_push($error_array, "Email or password was incorrect<br>");
 
 	}
 
