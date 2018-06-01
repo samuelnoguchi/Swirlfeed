@@ -4,6 +4,7 @@
 
 body {
 	line-height: 17px;
+	background-color:#E6EAEB;
 }
 
 .top_bar {
@@ -14,6 +15,8 @@ body {
 	border-bottom: 0.25em solid #2980b9;
 	margin: 0 0 10px 0;
 	display:inline-flex;
+	position:fixed;
+	z-index:10;
 
 }
 
@@ -39,10 +42,12 @@ nav a{
 	color: #fff;
 	text-decoration: none;
 	font-size:17px;
+	margin-left: 5px;
 }
 
 nav a:hover{
 	color:#2C6C96;
+
 }
 
 nav {
@@ -51,4 +56,41 @@ nav {
 	position: absolute;
 	margin: 10px;
 
+}
+
+.wrapper {
+	margin: 0 auto;
+	top: 50px;
+	position:relative;
+	padding:0 10px;
+	width: 75%;
+	min-width: 950px;
+
+}
+
+.column{
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid #D3D3D3;
+	border-radius: 5px;
+	box-shadow: 2px 2px 1px #D3D3D3;
+	z-index: -1;
+}
+
+.user_details{
+	width: 250px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.user_details_left_right{
+	width: 125px;
+	display: inline-block;
+	position: absolute;
+}
+
+.user_details img {
+	height:125px;
+	border-radius: 5px;
+	margin-right: 5px;
 }
