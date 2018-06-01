@@ -1,14 +1,9 @@
 <?php 
-require 'config/config.php';
+include("includes/header.php");
 
- ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Swirlfeed</title>
-</head>
-<body>
+?>
+
 	Hello Sam
 </body>
 </html>

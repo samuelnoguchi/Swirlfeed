@@ -1,0 +1,54 @@
+*{
+	font-family: 'Lato';
+}
+
+body {
+	line-height: 17px;
+}
+
+.top_bar {
+	width: 100%;
+	min-width: 1050px;
+	height: 40px;
+	background-color: #3498db;
+	border-bottom: 0.25em solid #2980b9;
+	margin: 0 0 10px 0;
+	display:inline-flex;
+
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.logo a{
+	margin-left: 10px;
+	font-size: 180%;
+	position: relative;
+	top: 9px;
+	text-decoration: none;
+	color: #2C6C96;
+}
+
+.logo a:hover{
+	color:#fff;
+}
+
+nav a{
+	position:relative;
+	color: #fff;
+	text-decoration: none;
+	font-size:17px;
+}
+
+nav a:hover{
+	color:#2C6C96;
+}
+
+nav {
+	float:right;
+	right: 1px;
+	position: absolute;
+	margin: 10px;
+
+}
