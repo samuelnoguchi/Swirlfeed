@@ -1,5 +1,15 @@
 		<?php 
 		include("includes/header.php");
+		include("includes/classes/User.php");
+		include("includes/classes/Post.php");
+
+		if(isset($_POST['post'])){
+			$post = new Post($con, $userLoggedIn);
+			$post->submitPost($_POST['post_text'], 'none');
+
+
+		}
+
 		?>
 
 		<div class="user_details column">
@@ -22,12 +32,12 @@
 
 		</div>
 		<div class="main_column column">
-			<form class="post_form" method="index.php" method="POST">
+			<form class="post_form" action="index.php" method="POST">
 				<textarea name="post_text" id="post_text" placeholder="Got something to say?"></textarea>
 				<input type="submit" name="post" id="post_button" value="Post">
 				<hr>
-
 			</form>
+
 		</div>
 
 
