@@ -11,9 +11,9 @@ require 'includes/form_handlers/login_handler.php';
 <html>
 <head>
 	
-	<link rel="stylesheet" type="text/css" href="Assets/css/register_style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/register_style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="Assets/js/register.js"></script>
+	<script src="assets/js/register.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet"> 
 	<title>Welcome to Swirlfeed!</title>
 	

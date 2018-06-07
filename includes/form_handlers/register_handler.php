@@ -109,7 +109,7 @@ if(isset($_POST['register_button'])){
 
 		//Profile picture assignment
 
-		$profile_pic = "Assets/Images/profile_pics/defaults/head_deep_blue.png";
+		$profile_pic = "assets/images/profile_pics/defaults/head_deep_blue.png";
 
 		$query = mysqli_query($con, "INSERT INTO users VALUES ('', '$fname', '$lname', '$username', '$em', '$password', '$date', '$profile_pic', '0', '0', 'no', ',')");
 
