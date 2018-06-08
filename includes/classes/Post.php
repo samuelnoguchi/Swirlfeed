@@ -56,7 +56,6 @@ class Post {
 
 		if(mysqli_num_rows($data_query) > 0) {
 
-
 			$num_iterations = 0; //Number of results checked (not necasserily posted)
 			$count = 1;
 
@@ -82,10 +81,12 @@ class Post {
 					continue;
 				}
 
+				$user_logged_obj = new User($this->con, $userLoggedIn);
 				
+				if($user_logged_obj->isFriend($added_by)){
 
 					if($num_iterations++ < $start)
-						continue; 
+							continue; 
 
 
 					//Once 10 posts have been loaded, break
@@ -182,7 +183,7 @@ class Post {
 
 							</div>
 							<hr>";
-				
+				}
 
 			} //End while loop
 
