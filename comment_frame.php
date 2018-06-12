@@ -7,6 +7,15 @@
 </head>
 <body>
 
+	<style type="text/css">
+		*{
+			font-size: 12px;
+			font-family:Lato, Sans-serif;
+
+
+		}
+	</style>
+
 	<?php 
 		require 'config/config.php';
 		include("includes/classes/User.php");
@@ -55,7 +64,7 @@
 
 	<form action="comment_frame.php?post_id=<?php echo $post_id; ?>" id="comment_form" name="postComment<?php echo $post_id; ?>" method="POST">
 		
-		<textarea name="post_body"></textarea>
+		<textarea name="post_body" class= "post_body"></textarea>
 		<input type="submit" name="postComment<?php echo $post_id; ?>" value="Post">
 	</form>
 
