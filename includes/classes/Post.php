@@ -107,9 +107,9 @@ class Post {
 					<script>
 						function toggle<?php echo $id; ?>() {
 
-							var target= $(event.target);
+							//var target= $(event.target);
 							
-							if(!target.is("a")){
+							//if(!target.is("a")){
 								
 								var element = document.getElementById("toggleComment<?php echo $id ?>");
 								
@@ -117,8 +117,7 @@ class Post {
 									element.style.display = "none";
 								else
 									element.style.display = "block";
-							}
-
+							//}
 							
 						}
 						
