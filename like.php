@@ -6,6 +6,20 @@
 </head>
 <body>
 
+	<style type="text/css">
+		
+		body{
+			background-color: #fff;
+		}
+
+		form {
+			position:absolute;
+			top: 3px;
+		}
+
+
+	</style>
+
 	<?php 
 		require 'config/config.php';
 		include("includes/classes/User.php");
