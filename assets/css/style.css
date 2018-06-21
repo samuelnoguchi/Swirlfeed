@@ -111,6 +111,10 @@ nav {
 	width:100%;
 }
 
+#post_body{
+	margin-top: 4px;
+}
+
 .post_form textarea {
 	width: 81%;
 	height: 60px;
@@ -240,4 +244,103 @@ textarea:focus{
 .like_value{
 	display:inline;
 	font-size: 16px;
+}
+
+.profile_left{
+	top: -10px;
+	width: 20%;
+	max-width: 240px;
+	min-width: 130px;
+	height: 100vh;
+	float: left;
+	position: relative;
+	background-color: #3498db;
+	border-right: 10px solid #83D6FE;
+	margin-right:20px;
+
+
+}
+
+.profile_left img {
+	min-width: 80px;
+	width: 55%;
+	margin: 28px;
+	border: 5px solid #83D6Fe;
+	border-radius: 100px;
+}
+
+.profile_info{
+	width:100%;
+	padding: 10px 0 10px 0;
+}
+
+.profile_info{
+	margin: 0 0 0 20px;
+	word-wrap: break-word;
+}
+
+.danger {
+	background-color: #e74c3c;
+}
+
+.warning {
+	background-color: #d6a426;
+}
+
+.default {
+	background-color: #bdc3c7;
+}
+
+.success {
+	background-color: #2ecc71;
+}
+
+.info {
+	background-color: #3498db;
+}
+
+.deep_blue {
+	background-color: #0043f0;
+}
+
+.profile_left input[type="submit"]{
+	width: 90%;
+	height: 30px;
+	border-radius: 5px;
+	margin: 7px 7px 7px 7px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+
+.profile_left input[type="submit"]:active {
+	padding: 5px 4px 4px 5px;
+}
+
+#accept_button{
+	width:15%;
+	height: 28px;
+	border-radius: 5px;
+	margin: 5px;
+	border:none;
+	color: #fff;
+	background-color: #2ecc71;
+}
+
+#ignore_button{
+	width:15%;
+	height: 28px;
+	border-radius: 5px;
+	margin: 5px;
+	border:none;
+	color: #fff;
+	background-color: #e74c3c;
+}
+
+.form-group textarea{
+	width: 100%;
+	color: #616060;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #D3D3D3;
 }

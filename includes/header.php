@@ -1,5 +1,7 @@
 <?php 
 require 'config/config.php';
+include("includes/classes/User.php");
+include("includes/classes/Post.php");
 
 if(isset($_SESSION['username'])) {
 	$userLoggedIn = $_SESSION['username'];
@@ -18,9 +20,10 @@ else {
 <head>
 	<title>Swirlfeed</title>
 	
-
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>	
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script src="assets/js/swirlfeed.js"></script>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -44,7 +47,7 @@ else {
 			<a href="index.php"><i class="fa fa-home fa-lg"></i> </a>
 			<a href="#"><i class="fa fa-envelope fa-lg"></i></a>
 			<a href="#"><i class="fa fa-bell fa-lg"></i></a>
-			<a href="#"><i class="fa fa-users fa-lg"></i></a>
+			<a href="requests.php"><i class="fa fa-users fa-lg"></i></a>
 			<a href="#"><i class="fa fa-cog fa-lg"></i></a>	 
 			<a href="includes/handlers/logout.php"><i class="fa fa-sign-out-alt fa-lg"></i></a>	 
 
