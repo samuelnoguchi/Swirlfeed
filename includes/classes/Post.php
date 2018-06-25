@@ -220,7 +220,7 @@ class Post {
 
 								<div class='newsfeedPostOptions'>
 									Comments($comments_check_num)&nbsp;&nbsp;&nbsp;
-									<iframe src='like.php?post_id=$id' scrolling='none'></iframe>
+									<iframe src='like.php?post_id=$id' scrolling='no'></iframe>
 
 
 								</div>
@@ -437,7 +437,7 @@ class Post {
 
 								<div class='newsfeedPostOptions'>
 									Comments($comments_check_num)&nbsp;&nbsp;&nbsp;
-									<iframe src='like.php?post_id=$id' scrolling='none'></iframe>
+									<iframe src='like.php?post_id=$id' scrolling='no' class='profile_like_button'></iframe>
 
 
 								</div>
