@@ -42,7 +42,7 @@
 
 			</div>
 
-			<img id="#loading"  src="assets/images/icons/Loading_icon.gif">
+			<img id="loading"  src="assets/images/icons/Loading_icon.gif">
 
 		</div>
 

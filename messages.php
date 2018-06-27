@@ -74,7 +74,10 @@
 			<?php 
 				if($user_to == "new"){
 					echo "Select the friend you would like to message <br><br>";
-					echo "To: <input type ='text'>";
+			?>				
+					 To: <input type ='text' onkeyup='getUsers(this.value, "<?php echo $userLoggedIn; ?>")'name = 'q' placeholder = 'Name' autocomplete='off' id ='search_text_input'>
+
+			<?php		 
 					echo "<div class='results'></div>";
 				}
 				else{
@@ -96,4 +99,17 @@
 
 	</script>
 
+
 </div>
+
+<div class="user_details column" id="conversations">
+		
+		<h4>Conversations</h4>
+		<div class="loaded_conversations">
+			<?php echo $message_obj->getConvos(); ?>
+			<br>
+			<a href = "messages.php?u=new">New Message</a>
+
+		</div>
+
+	</div>

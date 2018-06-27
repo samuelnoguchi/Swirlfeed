@@ -99,9 +99,21 @@
 
 		
 		<div class="profile_main_column column">
+
+			<ul class="nav nav-tabs">
+			  <li role="presentation" class="active"><a href="#">Home</a></li>
+			  <li role="presentation"><a href="#">Profile</a></li>
+			  <li role="presentation"><a href="#">Messages</a></li>
+			</ul>
+
+			
+
+
+
+
 			<div class="posts_area"></div>
 
-			<img id="#loading"  src="assets/images/icons/Loading_icon.gif">
+			<img id="loading"  src="assets/images/icons/Loading_icon.gif">
 
 
 
@@ -170,7 +182,7 @@
                }
               
                inProgress = true;
-               $('#loading').show();
+               //$('#loading').show();
      
                var page = $('.posts_area').find('.nextPage').val() || 1; //If .nextPage couldn't be found, it must not be on the page yet (it must be the first time loading posts), so use the value '1'
      
@@ -190,7 +202,8 @@
      
                        inProgress = false;
                    }
-               });
+               });$('#loading').hide();
+
            }
      
            //Check if the element is in view
@@ -207,7 +220,7 @@
                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && //* or $(window).height()
                    rect.right <= (window.innerWidth || document.documentElement.clientWidth) //* or $(window).width()
                );
-           }
+           }   
        });
      
        </script>
