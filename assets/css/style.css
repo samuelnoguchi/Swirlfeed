@@ -366,3 +366,57 @@ textarea:focus{
 	margin: 10px 0 0 20px;	
 }
 
+#message_textarea {
+	width: 75%;
+	height: 45px;
+	margin-bottom: 15px;
+	color: #616060;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid #1f1f14;
+	padding: 2px;
+}
+
+#message_submit{
+	
+	height: 30px;
+	border-radius: 5px;
+	margin: 7px 7px 7px 17px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	float: right;
+	position: absolute;
+}
+
+.message{
+	border: 1px solid #000;
+	border-radius: 5px;
+	padding: 5px 10px;
+	display: inline-block;
+	color: #fff;
+}
+
+.message#blue{
+	background-color: #3498db;
+	border-color: #2980b9;
+	float: right;
+	margin-bottom: 5px;
+}
+
+.message#green{
+	background-color: #2ecc71;
+	border-color: #27ae60;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.loaded_messages{
+	height: 65%;
+	min-height: 300px;
+	max-height: 400px;
+	overflow: scroll;
+	margin-bottom: 10px;
+
+
+}
