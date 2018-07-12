@@ -99,22 +99,29 @@
 
 		
 		<div class="profile_main_column column">
+			<div class ="profile_nav_tabs">
+				<ul class="nav nav-pills">
+				  <li role="presentation" class="active"><a href="#">Home</a></li>
+				  <li role="presentation"><a href="#">Profile</a></li>
+				  <li role="presentation"><a href="#">Messages</a></li>
+				</ul>
+			</div>
 
-			<ul class="nav nav-tabs">
-			  <li role="presentation" class="active"><a href="#">Home</a></li>
-			  <li role="presentation"><a href="#">Profile</a></li>
-			  <li role="presentation"><a href="#">Messages</a></li>
-			</ul>
+			<div class = "tab-content">
+				<div role="tabpanel" class = "tab-pane fade in active" id="newsfeed_div">
+					
+					
+
+
+				</div>
+				
+
+			</div>
+			
+				<div class="posts_area"></div>
+					<img id="loading"  src="assets/images/icons/Loading_icon.gif">	
 
 			
-
-
-
-
-			<div class="posts_area"></div>
-
-			<img id="loading"  src="assets/images/icons/Loading_icon.gif">
-
 
 
 

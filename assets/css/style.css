@@ -42,7 +42,7 @@ a:hover{
 	color:#fff;
 }
 
-nav a{
+.top_bar nav a{
 	position:relative;
 	color: #fff;
 	text-decoration: none;
@@ -50,12 +50,12 @@ nav a{
 	margin-left: 5px;
 }
 
-nav a:hover{
+.top_bar nav a:hover{
 	color:#2C6C96;
 
 }
 
-nav {
+.top_bar nav {
 	float:right;
 	right: 1px;
 	position: absolute;
@@ -480,3 +480,17 @@ textarea:focus{
 	margin-left: 10px;
 	font-size: 10px;
 }
+/*
+.nav-pills li{
+	margin: 5px 10px 5px 5px;
+	padding: 3px;
+	border-radius: 5px;
+	color: #3498db;
+}
+
+
+.profile_nav_tabs{
+	margin-bottom: 30px;
+}
+
+*/
